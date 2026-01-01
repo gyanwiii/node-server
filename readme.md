@@ -12,7 +12,7 @@ npm run dev
 ## Screenshots
 
 ### Server Running
-![Server](screenshots/terminal.png)
+![Server](screenshots/Terminal.png)
 
 ### Home Page
 ![Home](screenshots/home_page.png)
