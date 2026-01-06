@@ -4,7 +4,7 @@ const fs = require('fs');
 const PORT = 3000;
 http.createServer((req, res) => {
     if (req.url === '/' || req.url === '/home') {
-        fs.readFile(`${__dirname}/page_path/home.html`, (err, data) => {
+        fs.readFile(`page_path/home.html`, (err, data) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Internal Server Error');
@@ -16,7 +16,7 @@ http.createServer((req, res) => {
         });
     }
     else if (req.url === '/menu') {
-        fs.readFile(`${__dirname}/page_path/menu.html`, (err, data) => {
+        fs.readFile(`page_path/menu.html`, (err, data) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Internal Server Error');
@@ -28,7 +28,7 @@ http.createServer((req, res) => {
         });
     }
     else if (req.url === '/about') {
-        fs.readFile(`${__dirname}/page_path/about.html`, (err, data) => {
+        fs.readFile(`page_path/about.html`, (err, data) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Internal Server Error');
@@ -40,7 +40,7 @@ http.createServer((req, res) => {
         });
     }
     else if (req.url === '/contact') {
-        fs.readFile(`${__dirname}/page_path/contact.html`, (err, data) => {
+        fs.readFile(`page_path/contact.html`, (err, data) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Internal Server Error');
