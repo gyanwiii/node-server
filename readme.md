@@ -1,4 +1,4 @@
-# Assignment 6 – Simple Web Server using Node.js
+# Simple Web Server using Node.js
 
 ## To start the application
 npm init
