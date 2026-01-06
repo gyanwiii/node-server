@@ -52,8 +52,11 @@ http.createServer((req, res) => {
         });
     }
     else{
-        res.writeHead(404, { 'Content-Type': 'text/plain' });
-        res.end('404 Not Found');
+        res.writeHead(404, { 'Content-Type': 'text/html' });
+        res.end(`
+            <h2 style="text-align:center; color:red; margin-top: 200px;">404 Error</h2>
+            <div style="text-align:center;">Oops....page not found</div>
+            `);
     }
 }).listen(PORT, () => {
     console.log(`server is running on http://localhost:${PORT}`)
